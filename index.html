@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>сервис</title>
+        <link rel="stylesheet" href="css/tabs.css">
+        <link rel="stylesheet" href="css/acceptance.css">
+    </head>
+
+    <body>
+        <div id="tabs">
+            <div class="tab whiteborder">Приемка</div>
+            <div class="tab">Текучка</div>
+            <div class="tab">Выдача</div>
+            <div class="tabContent">
+                <div id="timedisplay"></div>
+                <form id="contact_form" class="contact_form" action="#" method="post">
+                    <ul>
+                        <li>
+                            <h2>Оформление аппарата в ремонт</h2>
+                            <span class="required_notification">* Поля обязательные для заполнения</span>
+                        </li>
+
+                        <li>
+                            <label for="nameZ" >Номер заказа</label><div id="nameOrder"><div>
+                            <input name="entry.553477" id="nameZ" type="text" value="1"/>
+                        </li>
+                        <li>
+                            <label for="name">Наименование модели</label>
+                            <input name="entry.2144833880" id="name" type="text"  placeholder="Samsung" required />
+                        </li>
+                        <li>
+                            <label for="imei">Серийный номер (IMEI)</label>
+                            <input name="entry.713423815" id="imei" type="text"  placeholder="12345678901234" required />
+                        </li>
+                        <li>
+                            <label for="name_client">Ф.И.О. Клиента</label>
+                            <input name="entry.971044723" id="name_client" type="text"  placeholder="Иванов" required />
+                        </li>
+                        <li>
+                            <label for="phone">Телефон клиента</label>
+                            <input name="entry.67712943" id="phone" type="text"  placeholder="+375-29-1234567" required />
+                        </li>
+                        
+                        <li>
+                            <label for="message">Описание поломки:</label>
+                            <textarea name="entry.28270132" id="message" cols="40" rows="6" required ></textarea>
+                        </li>
+                        <li>
+                            <button class="submit" type="submit">Сформировать заказ</button>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+            <div class="tabContent">
+                <div id="info">
+                    <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSX3ODOfqiELwSmfvPihXRSwijxg80vejt2UsJExXI7AQCGFqxI8pBMAo8F9fMR2xlG4Yj7DEB50ZYl/pubhtml?widget=true&amp;headers=false"></iframe>
+                </div>
+            </div>
+            <div class="tabContent">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSekw-qKPVID2XwdkFG5G7Uw78jCrVVjaF84hl0KF3vGmyiIsw/viewform?embedded=true" width="700" height="520" frameborder="0" marginheight="0" marginwidth="0">Загрузка...</iframe>
+            </div>
+        </div>
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/tabs.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/gSheet.js"></script>
+    </body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "name": "servis",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "browser-sync start -s -w"
+  },
+  "author": "Denis Minzakirov",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.24.4"
+  }
+}

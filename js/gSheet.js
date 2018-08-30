@@ -1,4 +1,4 @@
-/*$(document).ready(function(){ // после загрузки DOM
+$(document).ready(function(){ // после загрузки DOM
   $('#contact_form').submit(function(e){ // вешаем событие на отправку формы
     e.preventDefault(); // выключаем стандартное действие отправки
     var form = $(this); // запомним форму в переменной
@@ -23,7 +23,7 @@
             }
     });
   });
-});*/
+});
 
 //адрес гкгл формы для таблицы
 //https://docs.google.com/forms/d/e/1FAIpQLSekw-qKPVID2XwdkFG5G7Uw78jCrVVjaF84hl0KF3vGmyiIsw/formResponse
@@ -53,7 +53,7 @@ $(document).ready(function(){
     
 		})
 });
-
+/*
 //опровляем запрс гугл скрипту для внесения номера возврата
 $('#issue_an_order').submit(function(e){ // вешаем событие на отправку формы
     e.preventDefault(); // выключаем стандартное действие отправки
@@ -79,7 +79,7 @@ $('#issue_an_order').submit(function(e){ // вешаем событие на о�
             }
     });
   });
-
+*/
 
 //https://docs.google.com/spreadsheets/d/e/2PACX-1vSX3ODOfqiELwSmfvPihXRSwijxg80vejt2UsJExXI7AQCGFqxI8pBMAo8F9fMR2xlG4Yj7DEB50ZYl/pubhtml?gid=73956313&single=true
 //https://docs.google.com/spreadsheets/d/1i0brXIbpyR0M38yo4WYQ0fgirGhxRZGXra9h-c9Oq64/edit#gid=73956313&range=H6

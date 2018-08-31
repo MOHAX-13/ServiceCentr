@@ -1,12 +1,14 @@
+console.log("gSheet");
 $(document).ready(function(){ // после загрузки DOM
   $('#contact_form').submit(function(e){ // вешаем событие на отправку формы
     e.preventDefault(); // выключаем стандартное действие отправки
     var form = $(this); // запомним форму в переменной
 
     var data = form.serialize(); // сериализуем данные формы в строку для отправки, 
+    console.log(data);
 
     $.ajax({ // инициализируем аякс
-            url: "https://docs.google.com/forms/d/e/1FAIpQLSekw-qKPVID2XwdkFG5G7Uw78jCrVVjaF84hl0KF3vGmyiIsw/formResponse",
+            url: "https://docs.google.com/forms/d/e/1FAIpQLSekw-qKPVID2XwdkFG5G7Uw78jCrVVjaF84hl0KF3vGmyiIsw/formResponse2",
             data: data, // данные  которые мы сериализовали
             type: "POST", // постом
             dataType: "xml", // ответ ждем в формате xml
@@ -53,16 +55,16 @@ $(document).ready(function(){
     
 		})
 });
-/*
+
 //опровляем запрс гугл скрипту для внесения номера возврата
-$('#issue_an_order').submit(function(e){ // вешаем событие на отправку формы
+/*$('#issue_an_order').submit(function(e){ // вешаем событие на отправку формы
     e.preventDefault(); // выключаем стандартное действие отправки
     var form = $(this); // запомним форму в переменной
 
     var data = form.serialize(); // сериализуем данные формы в строку для отправки, 
 
     $.ajax({ // инициализируем аякс
-            url: "https://script.google.com/macros/s/AKfycbzen72t3boXP4IkswDDPq9lJZf7R01NtZbhsBdjA64jrHszTGxM/exec",
+            url: "https://sheets.googleapis.com/v4/spreadsheets/1jc2wrbpZXwe_EVLGMx8VQl--dMm7Ww9X7i407nwKO2M/values:batchUpdate",
             data: data, // данные  которые мы сериализовали
             type: "POST", // постом
             dataType: "xml", // ответ ждем в формате xml
@@ -78,8 +80,8 @@ $('#issue_an_order').submit(function(e){ // вешаем событие на о�
                 }
             }
     });
-  });
-*/
+  });*/
+
 
 //https://docs.google.com/spreadsheets/d/e/2PACX-1vSX3ODOfqiELwSmfvPihXRSwijxg80vejt2UsJExXI7AQCGFqxI8pBMAo8F9fMR2xlG4Yj7DEB50ZYl/pubhtml?gid=73956313&single=true
 //https://docs.google.com/spreadsheets/d/1i0brXIbpyR0M38yo4WYQ0fgirGhxRZGXra9h-c9Oq64/edit#gid=73956313&range=H6

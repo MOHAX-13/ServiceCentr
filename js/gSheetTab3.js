@@ -1,5 +1,3 @@
-console.log("gSheetTab3");
-
 var batchUpdateValuesRequestBody = {
       valueInputOption: 'RAW',  // TODO: Update placeholder value.
       // The new values to apply to the spreadsheet.

@@ -25,20 +25,3 @@ contact.addEventListener('submit', function (e) {
     res.push(order_date.textContent, nameInput.value, imeiInput.value, name_clientInput.value, phoneInput.value, );
     console.log(res);
 });
-
-
-
-/*form.onsubmit = function (e) {
-  e.preventDefault();
-};*/
-
-  /*var data = {};
-  for (var i = 0, ii = form.length; i < ii; ++i) {
-    var input = form[i];
-    if (input.name) {
-      data[input.name] = input.value;
-    }
-  }*/
-
-//console.log(data);
-
